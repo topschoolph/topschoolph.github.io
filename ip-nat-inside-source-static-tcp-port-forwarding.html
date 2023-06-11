@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ip Nat Inside Source Static Tcp Port Forwarding - QnA</title>
+    <meta name="description" content="Ip Nat Inside Source Static Tcp Port Forwarding, , , , , , , 0, Cisco IP NAT Outside vs Inside - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, ip-nat-inside-source-static-tcp-port-forwarding, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ip Nat Inside Source Static Tcp Port Forwarding - QnA" />
+    <meta property="og:description" content="Ip Nat Inside Source Static Tcp Port Forwarding, , , , , , , 0, Cisco IP NAT Outside vs Inside - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, ip-nat-inside-source-static-tcp-port-forwarding, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ip Nat Inside Source Static Tcp Port Forwarding - QnA" />
+    <meta name="twitter:description" content="Ip Nat Inside Source Static Tcp Port Forwarding, , , , , , , 0, Cisco IP NAT Outside vs Inside - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, ip-nat-inside-source-static-tcp-port-forwarding, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://topschoolph.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://topschoolph.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://topschoolph.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://topschoolph.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://topschoolph.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://topschoolph.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://topschoolph.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://topschoolph.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Ip Nat Inside Source Static Tcp Port Forwarding</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">angelsss178</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Ip+Nat+Inside+Source+Static+Tcp+Port+Forwarding" alt="Ip Nat Inside Source Static Tcp Port Forwarding">
+                    </div>
+                    <p></p>
+                    <p>The combination of nat and a permit tcp traffic from any source rule, such as the one you configured in the lab, enables __________ using an external ip</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-combination-of-nat-and-a-permit-tcp-traffic-from-any-source-rule-such-as-the-one-you-configured-in-the-lab-enables-__________-using-an-external-ip">1.
+                                            The combination of nat and a permit tcp traffic from any source rule, such as the one you configured in the lab, enables __________ using an external ip</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-protocol-that-sends-email-over-a-tcpip-network-and-its-default-ports-%e2%80%8b">2.
+                                            What protocol that sends email over a tcp/ip network? And its default port(s)? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#transports-files-over-a-tcp-ip-networkprotocol-and-default-portsasappp-po%e2%80%8b">3.
+                                            transports files over a TCP IP networkPROTOCOL AND DEFAULT PORT(S)Asappp po!!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tcpip-protocol-is-communication-software-yes-or-no-explain-ur-answer%e2%80%8b">4.
+                                            TCP/IP protocol is communication software yes or no? explain ur answer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#abrieviation-of-tcpip">5.
+                                            Abrieviation of TCP/IP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#direction-write-the-name-of-the-protocol-for-each-protocol-define-on-the-table-belowprotocolprotocol-definition1-provides-connections-to-computers-over-atcpip-network2-sends-e-mail-over-a-tcpi">6.
+                                            Direction: Write the name of the protocol for each protocol define on the table below
+Protocol
+Protocol Definition
+1 Provides connections to computers over a
+TCP/IP network
+2.Sends e-mail over a TCP/IP network
+3. Translates URLs to IP address
+4. Automates assignment of IP address on a
+network
+5 Securely transports Web pages over a
+TCPAP network
+6. Transport files over a TCP/IP networkâ€‹</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-to-configure-the-tcpip-ipv4-in-my-desktop-computer%e2%80%8b">7.
+                                            how to configure the TCP/IP IPv4 in my desktop computer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#describe-the-tcpip-reference-model%e2%80%8b">8.
+                                            Describe the TCP/IP reference model​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#at-which-layer-of-the-tcpip-model-does-tcp-operate">9.
+                                            At which layer of the tcp/ip model does tcp operate</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#microsoft-windows-tcpip-configuration-overview-reaction-paper">10.
+                                            Microsoft Windows TCP/IP Configuration Overview reaction paper?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-use-the-double-bubble-diagram-to-show-the-characteristic-of-tcp-and-ip%e2%80%8b">11.
+                                            A use the double bubble diagram to show the characteristic of tcp and ip​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-purpose-of-using-a-source-port-number-in-a-tcp-communication">12.
+                                            What is the purpose of using a source port number in a tcp communication?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#explain-the-purposes-of-each-layer-in-tcpip-suite-%e2%80%8b">13.
+                                            Explain the purposes of each layer in TCP/IP suite.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-tcp-and-ip-is-important%e2%80%8b">14.
+                                            why TCP and IP is important?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-provides-connection-to-computers-over-a-tcpip-network%e2%80%8b">15.
+                                            It provides connection to computers over a TCP/IP network​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#security-transfort-web-pages-over-a-tcp-ip-address-_">16.
+                                            Security transfort web pages over a TCP/ IP address? -_-</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#explain-the-reason-why-tcpip-was-created%e2%80%8b">17.
+                                            explain the reason why TCP/IP was created?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-function-of-tcpip-asap-please">18.
+                                            what is the function of tcp/ip 
+ASAP PLEASE</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4-it-is-responsible-for-breaking-down-the-data-into-small-packets-a-tcpb-ipc-tcpipd-none-of-these%e2%80%8b">19.
+                                            4. It is responsible for breaking down the data into small packets.A. TCPB. IPC. TCP/IPD. None of these​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-send-e-mail-over-a-tcpip-network%e2%80%8b">20.
+                                            It send E-mail over a TCP/IP network​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-important-tcpip-in-wide-area-network-wan">21.
+                                            How important TCP/IP in Wide Area Network (WAN) ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-the-diffence-and-similarities-of-between-tcpip-and-internet8%e2%80%8b">22.
+                                            what the Diffence and similarities of between TCP/IP and INTERNET8​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-transports-web-pages-over-a-tcpip-network%e2%80%8b">23.
+                                            it transports web pages over a TCP/IP network​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-three-protocols-operate-at-the-application-layer-of-the-tcpip-model">24.
+                                            Which three protocols operate at the application layer of the tcp/ip model?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-range-of-ports-can-either-be-used-by-tcp-or-udp-to-identify-the-requested-service-on-the-destination-device-or-as-a-client-source-port">25.
+                                            What range of ports can either be used by tcp or udp to identify the requested service on the destination device or as a client source port?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4-arpanet-icann-tcpip">26.
+                                            4. ARPANET, ICANN, tcp/ip</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-difference-between-ip-and-tcp%e2%80%8b">27.
+                                            What is difference between IP and TCP?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#from-the-choice-below-can-you-accept-an-ethernet-cable-which-allows-you-to-communicate-on-a-network-that-runs-transmission-control-protocolinternet-protocol-tcpip-a-serial-port-c-ethernet-port">28.
+                                            From the choice below can you accept an Ethernet cable which allows you to communicate on a network that runs Transmission Control Protocol/Internet Protocol (TCP/IP). A. Serial Port C. Ethernet Port B. Parallel Port D. Game Port​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#securely-transports-web-pages-over-a-tcpip-network%e2%80%8b">29.
+                                            Securely transports web pages over a TCP/IP network​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-purpose-of-the-tcpip-protocol-in-modern-networking">30.
+                                            What is the purpose of the TCP/IP protocol in modern networking?</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="the-combination-of-nat-and-a-permit-tcp-traffic-from-any-source-rule-such-as-the-one-you-configured-in-the-lab-enables-__________-using-an-external-ip">
+                            1. The combination of nat and a permit tcp traffic from any source rule, such as the one you configured in the lab, enables __________ using an external ip</h2><br />
+                        The combination of nat and a permit tcp traffic from any source rule, such as the one you configured in the lab, enables  external clients to reach the internal resource using an external ip.<br /><br />^_^<br />
+                                            <h2 class="ez-toc-section" id="what-protocol-that-sends-email-over-a-tcpip-network-and-its-default-ports-%e2%80%8b">
+                            2. What protocol that sends email over a tcp/ip network? And its default port(s)? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Internet Message Access Protocol (IMAP)
+</p><p></p><p><strong>Explanation:</strong></p><p>In computing, the Internet Message Access Protocol (IMAP) is an Internet standard protocol used by email clients to retrieve email messages from a mail server over a TCP/IP connection.</p><br />
+                                            <h2 class="ez-toc-section" id="transports-files-over-a-tcp-ip-networkprotocol-and-default-portsasappp-po%e2%80%8b">
+                            3. transports files over a TCP IP networkPROTOCOL AND DEFAULT PORT(S)Asappp po!!​</h2><br />
+                        <p><strong>Answer:</strong></p><p>whatt iss  the question po</p><br />
+                                            <h2 class="ez-toc-section" id="tcpip-protocol-is-communication-software-yes-or-no-explain-ur-answer%e2%80%8b">
+                            4. TCP/IP protocol is communication software yes or no? explain ur answer​</h2><br />
+                        <p><strong>Answer:</strong></p><p> Since you mention that you are already reading a book on the topic you must have some idea of the answers to these questions.</p><p>However, to address some of the points:</p><p>TCP is distinct from IP. I will describe TCP here as I believe that is what you …</p><p></p><p><strong>Explanation:</strong></p><p>pa heart pa follow pa branliest </p><p></p><p>thank you</p><p></p><p>#carry on learning</p><br />
+                                            <h2 class="ez-toc-section" id="abrieviation-of-tcpip">
+                            5. Abrieviation of TCP/IP</h2><br />
+                        TCP/IP-TRANSMISSION CONTROL PROTOCOL/INTERNET PROTOCOL<br />-is a suite of communication protocols used to interconnect network devices on the internet. <br />
+                                            <h2 class="ez-toc-section" id="direction-write-the-name-of-the-protocol-for-each-protocol-define-on-the-table-belowprotocolprotocol-definition1-provides-connections-to-computers-over-atcpip-network2-sends-e-mail-over-a-tcpi">
+                            6. Direction: Write the name of the protocol for each protocol define on the table below
+Protocol
+Protocol Definition
+1 Provides connections to computers over a
+TCP/IP network
+2.Sends e-mail over a TCP/IP network
+3. Translates URLs to IP address
+4. Automates assignment of IP address on a
+network
+5 Securely transports Web pages over a
+TCPAP network
+6. Transport files over a TCP/IP networkâ€‹</h2><br />
+                        <p><strong>Answer:</strong></p><strong>1.</strong><strong>TCP/IP ⇒</strong><strong>(Internet protocol suite)</strong>  <strong>2.</strong><strong>SMTP ⇒(Simple Mail Transfer Protocol)</strong>  
+<strong>3.</strong><strong>NetBEUI ⇒(Network Basic Input/Output System)</strong>  <strong>4.</strong><strong>HTTP ⇒</strong><strong>(Hypertext Transfer Protocol)</strong>  
+<strong>5.</strong><strong>IPX/SPX ⇒</strong><strong>(stands for Internetwork Packet Exchange/Sequenced Packet Exchange</strong>
+<strong>6.</strong><strong>SSH</strong><strong> ⇒(Secure Shell Protocol)</strong>
+<strong>7. FTP ⇒</strong><strong>(File Transfer Protocol)</strong><p><strong></strong></p><p>#CaringOnLearning</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="how-to-configure-the-tcpip-ipv4-in-my-desktop-computer%e2%80%8b">
+                            7. how to configure the TCP/IP IPv4 in my desktop computer​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Select Start , then select Settings &gt; Network &amp; Internet .</p><p>Do one of the following: For a Wi-Fi network, select Wi-Fi &gt; Manage known networks. ...</p><p>Under IP assignment, select Edit.</p><p>Under Edit IP settings, select Automatic (DHCP) or Manual. ...</p><p>When you're done, select Save.</p><br />
+                                            <h2 class="ez-toc-section" id="describe-the-tcpip-reference-model%e2%80%8b">
+                            8. Describe the TCP/IP reference model​</h2><br />
+                        <p><strong>Answer:</strong></p><p>TCP/IP Reference Model is a four-layered suite of communication protocols. It was developed by the DoD (Department of Defence) in the 1960s. It is named after the two main protocols that are used in the model, namely, TCP and IP. TCP stands for Transmission Control Protocol and IP stands for Internet Protocol.</p><p></p><p>The four layers in the TCP/IP protocol suite are −</p><p></p><p>Host-to- Network Layer −It is the lowest layer that is concerned with the physical transmission of data. TCP/IP does not specifically define any protocol here but supports all the standard protocols.</p><p>Internet Layer −It defines the protocols for logical transmission of data over the network. The main protocol in this layer is Internet Protocol (IP) and it is supported by the protocols ICMP, IGMP, RARP, and ARP.</p><p>Transport Layer − It is responsible for error-free end-to-end delivery of data. The protocols defined here are Transmission Control Protocol (TCP) and User Datagram Protocol (UDP).</p><p>Application Layer − This is the topmost layer and defines the interface of host programs with the transport layer services. This layer includes all high-level protocols like Telnet, DNS, HTTP, FTP, SMTP, etc</p><p><strong>Answer:</strong></p><p>TCP/IP Reference Model or the Transmission Control Protocol and Internet Protocol is one of the conceptual models used in networking and computing systems across the globe. It is also known as the Department of Defense (DoD) Model because it was funded by the United States Department of Defense during the cold war when the USA was under the threat of a nuclear war with the fellow superpower USSR. To know more about the TCP/IP Reference Model keep reading this article till the end</p><p><strong>Explanation:</strong></p><p>follow </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="at-which-layer-of-the-tcpip-model-does-tcp-operate">
+                            9. At which layer of the tcp/ip model does tcp operate</h2><br />
+                        <p><strong>Answer:</strong></p><p>where's picture or example?</p><p><strong>Answer:</strong></p><p>transport-layer
+</p><p><strong>Explanation:</strong></p><p>Transmission Control Protocol (TCP) In terms of the OSI model, TCP is a transport-layer protocol. It provides a reliable virtual-circuit connection between applications; that is, a connection is established before data transmission begins.</p><br />
+                                            <h2 class="ez-toc-section" id="microsoft-windows-tcpip-configuration-overview-reaction-paper">
+                            10. Microsoft Windows TCP/IP Configuration Overview reaction paper?</h2><br />
+                        Microsoft Windows TCP/IP Configuration Overview<p>To successfully configure TCP/IP, you must first comprehend how TCP/IP <strong>networks</strong> are addressed and separated into networks and sub<strong>network</strong>s.</p><p>TCP/success IP's as the Internet's <strong>network</strong> protocol is primarily due to its ability to connect networks of all sizes and types. These <strong>networks</strong> are divided into three primary categories (along with a few others) with predetermined sizes. System administrators can partition each of them into smaller sub<strong>network</strong>s. An IP address is an divided into two parts using a subnet mask. The host (computer) is identified by one part, while the network to which it belongs is identified by the other. Examine an IP address to learn more about how IP addresses and subnet masks function.</p><p></p><p>How to configure the TCP/IP IPv4 in my desktop computer?</p><p>brainly.ph/question/7767869</p><p></p><p>#LETSSTUDY</p><br />
+                                            <h2 class="ez-toc-section" id="a-use-the-double-bubble-diagram-to-show-the-characteristic-of-tcp-and-ip%e2%80%8b">
+                            11. A use the double bubble diagram to show the characteristic of tcp and ip​</h2><br />
+                        <p><strong>Answer:</strong></p><p>sorry  didn't understand you have a great day 3 and 4 steps to become a super</p><p><strong>Answer:</strong></p><p>use the double Bible diagram to show the characteristic of TCP and ip</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-purpose-of-using-a-source-port-number-in-a-tcp-communication">
+                            12. What is the purpose of using a source port number in a tcp communication?</h2><br />
+                        The source port serves analogues to the destination port, but is used by the sending host to help keep track of new incoming connections and existing data streams. <br /><br /><br />Hope it helps<p><strong>Answer:</strong></p><p>It serves as an "analogues"</p><p><strong>Explanation:</strong></p><p>The source port serves analogues to the destination port,but is used by the sending host to help keep track of new incoming connections and existing data streams.As most of you are well aware,in  TCP/UDP data communications,a host will always  provide a destination and a source port number.</p><p></p><p></p><p>-hope it helps, God bless✨</p><br />
+                                            <h2 class="ez-toc-section" id="explain-the-purposes-of-each-layer-in-tcpip-suite-%e2%80%8b">
+                            13. Explain the purposes of each layer in TCP/IP suite.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Four layers of TCP/IP model are 1) Application Layer 2) Transport Layer 3) Internet Layer 4) Network Interface. ... It is also known as a network layer. Transport layer builds on the network layer in order to provide data transport from a process on a source system machine to a process on a destination system</p><br />
+                                            <h2 class="ez-toc-section" id="why-tcp-and-ip-is-important%e2%80%8b">
+                            14. why TCP and IP is important?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>TCP/IP specifies how data is exchanged over the internet by providing end-to-end communications that identify how it should be broken into packets, addressed, transmitted, routed and received at the destination.</p><p><strong>Explanation:</strong></p><p>Pa brainliest po hehe </p><p><strong>Answer:</strong></p><p>TCP is important because it establishes the rules and standard procedures for the way information is communicated over the internet. It is the foundation for the internet as it currently exists and ensures that data transmission is carried out uniformly, regardless of the location, hardware or software involved.</p><br />
+                                            <h2 class="ez-toc-section" id="it-provides-connection-to-computers-over-a-tcpip-network%e2%80%8b">
+                            15. It provides connection to computers over a TCP/IP network​</h2><br />
+                        <p><strong>Answer:</strong></p><p>FTP (File Transfer Protocol)</p><p></p>EXPLINATION<p>FTP is a standard internet protocol for transmitting files between computers on the internet over TCP/IP connections. </p><br />
+                                            <h2 class="ez-toc-section" id="security-transfort-web-pages-over-a-tcp-ip-address-_">
+                            16. Security transfort web pages over a TCP/ IP address? -_-</h2><br />
+                        <p><strong>Answer:</strong></p><p>sorry this is only my quest :(</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="explain-the-reason-why-tcpip-was-created%e2%80%8b">
+                            17. explain the reason why TCP/IP was created?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>TCP/IP was developed by the U.S. Department of Defense to specify how computers transfer data from one device to another. TCP/IP puts a lot of emphasis on accuracy, and it has several steps to ensure that data is correctly transmitted between the two computers.</p><p><strong>Explanation:</strong></p><p><strong>Have A Nice Day!</strong></p><p><strong>Hope it Helps</strong></p><p><strong>Answer:</strong></p><p>To specify how computers transfer data from one device to another.</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-function-of-tcpip-asap-please">
+                            18. what is the function of tcp/ip 
+ASAP PLEASE</h2><br />
+                        <p><strong>Answer:</strong></p><p>These two protocols were developed in the early days of the Internet by the U.S. military. The purpose was to allow computers to communicate over long distance networks. The TCP part has to do with the verifying delivery of the packets.</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="4-it-is-responsible-for-breaking-down-the-data-into-small-packets-a-tcpb-ipc-tcpipd-none-of-these%e2%80%8b">
+                            19. 4. It is responsible for breaking down the data into small packets.A. TCPB. IPC. TCP/IPD. None of these​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>B</strong><strong>.</strong><strong> </strong><strong>IP</strong></p><p><strong><strong>Explanation:</strong></strong></p><p><strong>Ip nternet protocol is the presponsible to break up the data into the smaller parts which is known as routing.</strong></p><br />
+                                            <h2 class="ez-toc-section" id="it-send-e-mail-over-a-tcpip-network%e2%80%8b">
+                            20. It send E-mail over a TCP/IP network​</h2><br />
+                        <p><strong>Answer:</strong></p><p>SMTP is part of the application layer of the TCP/IP protocol. Using a process called "store and forward," SMTP moves your email on and across networks. It works closely with something called the Mail Transfer Agent (MTA) to send your communication to the right computer and email inbox.</p><br />
+                                            <h2 class="ez-toc-section" id="how-important-tcpip-in-wide-area-network-wan">
+                            21. How important TCP/IP in Wide Area Network (WAN) ?</h2><br />
+                        WANs are used to connect LANs and other types of networks together so that users and computers in one location can communicate with users and computers in other locations. ... Network protocols including TCP/IP deliver transport and addressing functions.<br />
+                                            <h2 class="ez-toc-section" id="what-the-diffence-and-similarities-of-between-tcpip-and-internet8%e2%80%8b">
+                            22. what the Diffence and similarities of between TCP/IP and INTERNET8​</h2><br />
+                        <p><strong>Answer:</strong></p><p>TCP/IP- develop to allow cooperating computers to share</p><p>resources across a network</p><p></p><p>INTERNET8- Internet Explorer 8 is the latest version of the familiar web browser you are most comfortable using, helping you get everything you want from the web faster, easier, more privately and securely than ever before.</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="it-transports-web-pages-over-a-tcpip-network%e2%80%8b">
+                            23. it transports web pages over a TCP/IP network​</h2><br />
+                        <p><strong>Answer:</strong></p><p>FTP (File Transfer Protocol)</p><p>FTP is a standard internet protocol for transmitting files between computers on the internet over TCP/IP connections.</p><p></p><p></p><p></p><p>Transports web pages over a TCP/IP network. HTTP. 80. Automates assignment of IP address on a ...</p><p>Transports files over a TCP/IP network: FTP</p><p>Sends e-mail over a TCP/IP network: SMTP</p><p>Translates URLs to IP address: DNS</p><p>Protocol Definition: Protocol</p><p></p><p></p><p>TCP/IP stands for Transmission Control Protocol/Internet Protocol. TCP/IP is a set of standardized rules that allow computers to communicate on a network such as the internet.</p><br />
+                                            <h2 class="ez-toc-section" id="which-three-protocols-operate-at-the-application-layer-of-the-tcpip-model">
+                            24. Which three protocols operate at the application layer of the tcp/ip model?</h2><br />
+                        <p>Answer:</p><p>The three protocols that operate at the application layer of the tcp/ip model are TCP, UDP, and IP.</p><p>Explanation:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-range-of-ports-can-either-be-used-by-tcp-or-udp-to-identify-the-requested-service-on-the-destination-device-or-as-a-client-source-port">
+                            25. What range of ports can either be used by tcp or udp to identify the requested service on the destination device or as a client source port?</h2><br />
+                        <p><strong>Answer:</strong></p>✏️✏️〰️〰️✏️✏️✔️<p>the table, the UDP and TCP port numbers are identical. Port numbers above 1023 can be either registered or dynamic (also called private or non-reserved). Registered ports are in the range 1024 to 49151. Dynamic ports are in the range 49152 to 65535.</p><p><strong>Explanation:</strong></p><p>hope it's help po </p><br />
+                                            <h2 class="ez-toc-section" id="4-arpanet-icann-tcpip">
+                            26. 4. ARPANET, ICANN, tcp/ip</h2><br />
+                        <p><strong>Answer:</strong></p><p>The ARPANET (short for Advanced Research Projects Agency Network) was the first wide-area packet-switching network with distributed control and one of the first networks to implement the TCP/IP protocol suite. ... Licklider, Bob Taylor initiated the ARPANET project in 1966 to enable access to remote computers.</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-difference-between-ip-and-tcp%e2%80%8b">
+                            27. What is difference between IP and TCP?​</h2><br />
+                        <p> </p><p>Q: What is difference between IP and TCP?</p><p> </p><p><strong>A</strong><strong>:</strong><strong> </strong><strong>TCP and IP are two separate computer network protocols. IP is the part that obtains the address to which data is sent. TCP is responsible for data delivery once that IP address has been found. ... TCP is all the technology that makes the phone ring, and that enables you to talk to someone on another phone.</strong></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="from-the-choice-below-can-you-accept-an-ethernet-cable-which-allows-you-to-communicate-on-a-network-that-runs-transmission-control-protocolinternet-protocol-tcpip-a-serial-port-c-ethernet-port">
+                            28. From the choice below can you accept an Ethernet cable which allows you to communicate on a network that runs Transmission Control Protocol/Internet Protocol (TCP/IP). A. Serial Port C. Ethernet Port B. Parallel Port D. Game Port​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A</p><p><strong>Explanation:</strong></p><p>I HOPE IT'S HELP .</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><br />
+                                            <h2 class="ez-toc-section" id="securely-transports-web-pages-over-a-tcpip-network%e2%80%8b">
+                            29. Securely transports web pages over a TCP/IP network​</h2><br />
+                        <p><strong>Answer:</strong></p> FTP is a standard internet protocol for transmitting files between computers on the internet over TCP/IP connections. Transports web pages over a TCP/IP network.<p><strong>Explanation:</strong></p>HOPE IT HELPSPA BRAINLIEST NAMAN PLEASELAB U AS A FRIEND<br />
+                                            <h2 class="ez-toc-section" id="what-is-the-purpose-of-the-tcpip-protocol-in-modern-networking">
+                            30. What is the purpose of the TCP/IP protocol in modern networking?</h2><br />
+                        <p>A TCP/IP connection is used to control packet sizes, the rate of data exchange, flow control and network congestion. </p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/8WVWoW86Uhw?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>science</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/infer-the-speaker-s-tone-mood-and-purpose.html">Infer The Speaker s Tone Mood And Purpose</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/ante-s-law.html">Ante s Law</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/shakespeare-s-sister-virginia-woolf-summary.html">Shakespeare s Sister Virginia Woolf Summary</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/khara-arabic-meaning.html">Khara Arabic Meaning</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/simboll.html">Simboll</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/dalawang-libo.html">Dalawang Libo</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/haydn-pronunciation.html">Haydn Pronunciation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/klasismo-kahulugan.html">Klasismo Kahulugan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/sable-brush-definition.html">Sable Brush Definition</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/katutubong-paraan-ng-pagsulat.html">Katutubong Paraan Ng Pagsulat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/first-filipino-architect.html">First Filipino Architect</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/what-is-biodiversity-in-tagalog.html">What Is Biodiversity In Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/historical-perspective-of-nursing-and-the-computer.html">Historical Perspective Of Nursing And The Computer</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/malikhain.html">Malikhain</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/police-officers-pledge-pnp.html">Police Officers Pledge Pnp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/komunikasyong-organisasyonal.html">Komunikasyong Organisasyonal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/exam-questions-on-recruitment-and-selection.html">Exam Questions On Recruitment And Selection</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/nasindak.html">Nasindak</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/reflection-about-family-structures-and-legacies.html">Reflection About Family Structures And Legacies</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://topschoolph.github.io/musika-tula.html">Musika Tula</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://topschoolph.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://topschoolph.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://topschoolph.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://topschoolph.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://topschoolph.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
